@@ -56,7 +56,7 @@ body {
 #inicio header .contenido-header .logotipo {
     width: 80px;
     height: 80px;
-    margin: -8px 40px;
+    margin: -8px 5px;
 }
 
 #inicio header .contenido-header nav ul li {
@@ -66,15 +66,16 @@ body {
 #inicio header .contenido-header nav ul li i {
     display: block;
     color: rgb(255, 0, 0);
-    margin: 0 20px;
+    margin: 0 10px;
+    font-size: 20px;
 }
 
-#inicio header .contenido-header nav ul li a{
+#inicio header .contenido-header nav ul li a {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
     color: #000000;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .nav-responsive {
@@ -109,7 +110,7 @@ body {
 #inicio .carrusel .info h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    font-family: 'Dancing Script';  
+    font-family: 'Dancing Script';
 }
 
 #inicio .carrusel .info button {
@@ -189,7 +190,7 @@ body {
 #menu button {
     display: block;
     width: fit-content;
-    margin:auto;
+    margin: auto;
     font-size: 15px;
     border: none;
     background-color: #f4a03f;
