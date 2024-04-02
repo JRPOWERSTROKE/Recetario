@@ -11,6 +11,7 @@
     <title>Recetario</title>
 </head>
 <body>
+    <!--INICIO DE PAGINA -->
     <section id="inicio">
         <header>
         <div class="contenido-header">
@@ -59,6 +60,7 @@
         </div>
         </header>
         
+        <!--CARRUSEL DE IMAGENES DE PORTADA -->
         <div class="carrusel">
             <div class="galeria js-flickity" data-flickity-options='{"wrapAround":true, "pageDots":false, "autoPlay":true}'>
                 <div class="galeria-cell">
@@ -82,32 +84,40 @@
         </div>
     </section>
 
+    <!--IMAGENES DE TIPOS DE RECETAS -->
     <section id="menu">
         <h2>TIPOS DE RECETAS</h2>
         <div class="fila">
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/carnes.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/carnes.jpg" alt="">
+                    </a>
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Carnes</h3>
                     <p>Los mejores cortes y sabores</p>
                 </div>
             </div>
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/ensaladas.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/ensaladas.jpg" alt="">
+                    </a>
+                    
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Ensaladas</h3>
                     <p>Las mejores ensaladas frescas</p>
                 </div>
             </div>
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/mariscos.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/mariscos.jpg" alt="">
+                    </a>
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Mariscos</h3>
                     <p>Las mejores mariscos frescos</p>
                 </div>
@@ -116,33 +126,39 @@
         <div class="fila">
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/hamburguesas.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/hamburguesas.jpg" alt="">
+                    </a>
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Hamburguesas</h3>
                     <p>Las mejores hamburguesas</p>
                 </div>
             </div>
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/tacos.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/tacos.jpg" alt="">
+                    </a>
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Tacos</h3>
                     <p>Los mejores Sabores del taco</p>
                 </div>
             </div>
             <div class="item">
                 <div class="icono">
-                    <img src="./img/platillos/postres.jpg" alt="">
+                    <a href="./views/recetas.html">
+                        <img src="./img/platillos/postres.jpg" alt="">
+                    </a>
                 </div>
-                <div class="info">
+                <div class="info1">
                     <h3>Postres</h3>
                     <p>Los mas exquisitos postres</p>
                 </div>
             </div>
         </div>
-        <button>Ver Más</button>
+        <button onclick="location.href='./views/recetas.html'">Ver Mas</button>
     </section>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>

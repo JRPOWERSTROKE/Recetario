@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand';
+    box-sizing: border-box;
 }
 
 html {
@@ -16,6 +16,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/*INICIO DE LA PAGINA*/
 
 #inicio {
     height: 100vh;
@@ -36,6 +38,8 @@ body {
     padding: 40px 20px;
     position: relative;
 }
+
+/*BARRA DE NAVEGACION*/
 
 #inicio header .contenido-header nav {
     position: absolute;
@@ -91,6 +95,8 @@ body {
 #inicio header .contenido-header nav ul li:hover i {
     color: #423ff4;
 }
+
+/*IMAGENES DE PORTADA EN CARRUSEL*/
 
 #inicio .carrusel {
     position: relative;
@@ -151,14 +157,20 @@ body {
 /*SECCION DE MENU*/
 
 #menu {
-    padding: 50px 0;
+    padding: 50px 0px;
+    
 }
 
 #menu h2 {
     text-align: center;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+#menu h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 #menu .fila {
@@ -168,7 +180,7 @@ body {
 }
 
 #menu .fila .item img {
-    max-width: 150px;
+    max-width: 180px;
 }
 
 #menu .fila .item {
@@ -183,8 +195,9 @@ body {
 }
 
 #menu .fila .item .info1 {
-    margin-left: 15px;
+    margin-left: 2px;
     font-size: 14px;
+    font-weight: 500;
 }
 
 #menu button {
@@ -212,6 +225,8 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* SECCION RESPONSIVE*/
 
 @media screen and (max-width:1070px) {
     #inicio header .contenido-header nav {

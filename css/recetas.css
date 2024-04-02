@@ -1,0 +1,423 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* VARIABLES*/
+
+:root {
+    /*colores*/
+    --primario300: #ffaa6b;
+    --primario500: #ff5507;
+    --primario700: #db2800;
+
+    --gris100: #e7e7e7;
+    --gris300: #b0b0b0;
+    --gris500: #6d6d6d;
+    --gris700: #4f4f4f;
+    --gris950: #292929;
+
+    --azul700: #0907fa;
+    --azul900: #0706ac;
+
+    --black: #000000;
+    --white: #ffffff;
+
+    /*FONDO*/
+    --fondo: url('../img/fondo.jpg');
+
+    /*FUENTES*/
+    --fuentesTitulos: 'Imbue';
+    --fuentesBody: 'Roboto';
+    --fontWeightTitulos: 500;
+
+    /*MEDIDAS*/
+    --maxWidth: 1250px;
+    --transicion: 0.3s ease-in-out all;
+
+}
+
+body {
+    margin: 0 100px;
+    background: var(--fondo); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fuentesBody);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuentesTitulos);
+    font-weight: var(--fontWeightTitulos);
+    color: var(--gris950);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gris950);
+}
+
+a:hover {
+    color: var(--primario500);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    width: 20px;
+    height: 20px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    background: var(--gris100);
+    color: var(--black);
+    border: 2px solid var(--primario500);
+    border-radius: 20px;
+    padding: 3px 8px;
+    display: inline-block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--primario500);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+button:hover {
+    box-shadow: inset 0 100px 0 0 var(--primario300);
+}
+
+/*INICIO*/
+.contenedor-encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.logotipo {
+    margin: auto;
+    display: flex;
+    width: 130px;
+    height: 130px;
+}
+
+.titulolog {
+    font-size: 40px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.titulopag {
+    margin: auto;
+    text-align: center;
+    font-family: var(--fuentesTitulos);
+    font-size: 35px;
+    color: #292929;
+}
+
+.menuprincipal {    
+    text-align: center;
+}
+
+.horizontal {
+    display: flex;
+    height: 1px;
+    background: #000000;
+}
+
+/*MENU IZQUIERDO*/
+.contenedor-izquierdo {
+    display:flex;
+    align-content: flex-start;
+    height: 150vh;
+    width: 100vw;
+}
+
+.listadorecet {
+    text-align: left;
+    font-family: var(--fuentesTitulos);
+    font-size: 20px;
+}
+
+.recetasPDF {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: var(--azul900);
+}
+
+.vertical {
+    width: 1px;
+    margin-left: 1px;
+    background: #000000;
+}
+
+/*TARJETAS FLOTANTES*/
+.contenedor {
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 375px;
+}
+
+#tarjetas .contenedor .tarjetas-landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 200;
+}
+
+#tarjetas .contenedor .tarjetas-landing h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#tarjetas .contenedor .informacion {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+    background: #ffffff;
+    z-index: 180;
+    transition: 0.5s;
+}
+
+#tarjetas:hover .informacion {
+    left: 100%;
+}
+
+.informacion .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #bc8811;
+}
+
+.informacion .head .titulo {
+    font-family: var(--fuentesBody);
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+}
+
+.informacion .head .descripcion {
+    display: flex;
+    gap: 10px;
+}
+
+.informacion .head .descripcion .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.informacion .head .descripcion .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.informacion .head .descripcion .item p {
+    font-size: 14px;
+}
+
+.informacion .contenido {
+    margin-top: 5px;
+}
+
+.informacion .contenido .lista{
+    padding: 3px 5px;
+}
+
+.informacion .contenido .lista li {
+    font-size: 14px;
+    margin-bottom: 0px; 
+}
+
+.informacion .accion .btn {
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #bc8811;
+    display: block;   
+}
+
+/*CONTENEDOR 1*/
+.contenedor1 {
+    margin-top: -375px;
+    margin-left: 325px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 375px;
+}
+
+#tarjetas .contenedor1 .tarjetas-landing1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 150;
+}
+
+#tarjetas .contenedor1 .tarjetas-landing1 h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#tarjetas .contenedor1 .informacion1 {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 10px;
+    background: #ffffff;
+    z-index: 135;
+    transition: 0.5s;
+}
+
+#tarjetas:hover .informacion1 {
+    left: 100%;
+}
+
+.informacion1 .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #bc8811;
+}
+
+.informacion1 .head .titulo {
+    font-family: var(--fuentesBody);
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+}
+
+.informacion1 .head .descripcion {
+    display: flex;
+    gap: 10px;
+}
+
+.informacion1 .head .descripcion .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.informacion1 .head .descripcion .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+.informacion1 .head .descripcion .item p {
+    font-size: 14px;
+}
+
+.informacion1 .contenido {
+    margin-top: 5px;
+}
+
+.informacion1 .contenido .lista {
+    padding: 3px 5px;
+}
+
+.informacion1 .contenido .lista li {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.informacion1 .accion .btn {
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #bc8811;
+    display: block;
+
+}
+
+
+
+footer {
+    background-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    
+}
+
